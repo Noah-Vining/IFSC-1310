@@ -1,0 +1,21 @@
+/* ----- This is a comment ------ */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ----- Global Styles ------ */
+  body{
+    background-color: #C8B6C6;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  header.primary{
+    background-color: #BAA4EB;
+  }
+
+
