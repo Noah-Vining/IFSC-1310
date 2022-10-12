@@ -102,20 +102,10 @@ border-bottom:1px dotted #c0c0c0
 #content article.post:hover{
   box-shadow:0 8px 16px rgba(0,0,0,.4);
 }
-/* ------- Media Queries -------- */
 
-@media screen and (max-width:800px){
-  header.primary nav ul{
-  flex-direction:column;
+time.post-date{
+  text-transform:uppercase;
 }
-header.primary nav a{
-  display:block;
-}
-header.primary nav li{
-  margin-bottom:10px;
-}
-}
-
 
 
 /* ----- Box Sizing ------ */
@@ -136,4 +126,18 @@ html{
 /*----- Responsive Images -----*/
 img{
   max-width:100%;
+}
+
+/* ------- Media Queries -------- */
+
+@media screen and (max-width:800px){
+  header.primary nav ul{
+  flex-direction:column;
+}
+header.primary nav a{
+  display:block;
+}
+header.primary nav li{
+  margin-bottom:10px;
+}
 }
