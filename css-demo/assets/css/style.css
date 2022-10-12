@@ -1,84 +1,84 @@
 /* ----- This is a comment ------ */
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  /* ----- Global Styles ------ */
-  body{
-    background-color: #C8B6C6;
-    font-family: 'Raleway', sans-serif;
-    margin:0;
-  }
+/* ----- Global Styles ------ */
+body{
+  background-color: #C8B6C6;
+  font-family: 'Raleway', sans-serif;
+  margin:0;
+}
 
-  header.primary{
-    background-color: #BAA4EB;
-    text-align:center;
-    text-shadow:1px 1px #000000; /* First two values are x and y coords, third value (that isnt actually there right now) is blur and doesn't matter or is needed, and last in hex */
-    color:#ffffff
-    /* Long Form */
-    padding-top:40px;
-    padding-right:40px;
-    padding-bottom:40px;
-    padding-left:40px;
-    /* T, R, B, L (Order of sides)*/
-    padding: 40px 40px 40px 40px;
-    padding: 40px;
-    /* top/bottom | left/right */
-    padding: 40px 40px;
-  }
+header.primary{
+  background-color: #BAA4EB;
+  text-align:center;
+  text-shadow:1px 1px #000000; /* First two values are x and y coords, third value (that isnt actually there right now) is blur and doesn't matter or is needed, and last in hex */
+  color:#ffffff
+  /* Long Form */
+  padding-top:40px;
+  padding-right:40px;
+  padding-bottom:40px;
+  padding-left:40px;
+  /* T, R, B, L (Order of sides)*/
+  padding: 40px 40px 40px 40px;
+  padding: 40px;
+  /* top/bottom | left/right */
+  padding: 40px 40px;
+}
 
 header.primary h1{
-  font-size:2.5rem;
-  margin:20px 0
+font-size:2.5rem;
+margin:20px 0
 }
 
 header.primary h1 a{
-  color:#ffffff;
-  text-decoration:none;
+color:#ffffff;
+text-decoration:none;
 }
 
 header.primary h2{
-  font-size:1.6rem;
-  /* Top | Left/Right | Bottom */
-  margin: 0 auto 40px;
+font-size:1.6rem;
+/* Top | Left/Right | Bottom */
+margin: 0 auto 40px;
 }
 
 header.primary nav{
-  width:80vw;
-  max-width:900px;
-  margin: 20px auto;
+width:80vw;
+max-width:900px;
+margin: 20px auto;
 }
 
 header.primary nav ul{
-  padding:0;
-  display:flex;
-  flex-direction:row;
-  justify-content:space-evenly;
+padding:0;
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
 }
 
 header.primary nav ul li{
-  list-style-type:none; /* This has gotten rid of the bullet points from the unordered list */
+list-style-type:none; /* This has gotten rid of the bullet points from the unordered list */
 }
 
 header.primary nav ul li a{
-  color:#ffffff;
-  text-decoration:none;
-  background-color:#000000;
-  background-color:rgba(0,0,0,.5); /* Final value is opacity value */
-  padding:8px 16px;
-  border-radius:20px;
-  transition:0.5s; /* Transiton causes the hover color change to change slowly over time through gradiant */
-  border: 1px solid rgba(0,0,0,.5) /* Thickness, stroke, color */
+color:#ffffff;
+text-decoration:none;
+background-color:#000000;
+background-color:rgba(0,0,0,.5); /* Final value is opacity value */
+padding:8px 16px;
+border-radius:20px;
+transition:0.5s; /* Transiton causes the hover color change to change slowly over time through gradiant */
+border: 1px solid rgba(0,0,0,.5) /* Thickness, stroke, color */
 }
 
 header.primary ul li a:hover, header.primary ul li a:active{
-  background-color:rgba(0,0,0,.8); /* Darkens the buttons when hovering over them */
-  
+background-color:rgba(0,0,0,.8); /* Darkens the buttons when hovering over them */
+
 }
 
 #intro h2{
@@ -86,58 +86,123 @@ border-bottom:1px dotted #c0c0c0
 }
 
 #content{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-evenly;
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+border-bottom:2px solid #aaaaaa;
+padding:2.4rem;
+border-top:2px solid #aaaaaa;
 }
 
 #content article.post{
-  width:30%;
-  box-shadow:0 4px 8px rgba(0,0,0,.4);
-  padding:10px;
-  border-radius:4px;
-  font-size:8rem;
+width:30%;
+box-shadow:0 4px 8px rgba(0,0,0,.4);
+padding:10px;
+border-radius:4px;
+font-size:.7rem;
 }
 
 #content article.post:hover{
-  box-shadow:0 8px 16px rgba(0,0,0,.4);
+box-shadow:0 8px 16px rgba(0,0,0,.4);
 }
 
-time.post-date{
-  text-transform:uppercase;
+time.post-date, figcaption{
+text-transform:uppercase;
+color:#c0c0c0;
 }
 
+.post figure{
+margin:0;
+}
+
+.post figure img{
+border: 1px solid #c0c0c0;
+padding: 4px;
+border-radius:4px;
+}
+
+.post a{
+color:#3b638b;
+}
+
+.post a:hover, .post a:active {
+text-decoration:none;
+}
+
+aside .container{
+display:flex;
+justify-content:space-between;
+flex-direction:row;
+}
+
+aside .container .widget{
+width:45%
+}
+
+aside article.widget a:last-of-type{
+color:#ffffff;
+display:block;
+margin-top:20px;
+text-align:right;
+}
+
+aside article.widget a{
+color:#ffffff;
+}
+
+aside article footer {
+display:none;
+}
+
+/* --- Attribute Selector ---- */
+aside[role="complementary"]{
+background-color:#172635;
+color:#ffffff;
+padding:1.3rem;
+}
+
+#colophon{
+background-color:#BAA4EB;
+}
+
+#colophon h6{
+padding:20px;
+margin:0;
+color:#ffffff;
+font-size:.9rem;
+text-transform:uppercase;
+}
 
 /* ----- Box Sizing ------ */
 
 html{
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 /* ---- Utility Classes ----- */
 
 .container{
-  max-width:960px; 
-  width:80px;
-  margin:40px auto;
-  
+max-width:960px; 
+width:800px;
+margin:40px auto;
+
 }
 
 /*----- Responsive Images -----*/
 img{
-  max-width:100%;
+max-width:100%;
 }
 
 /* ------- Media Queries -------- */
 
 @media screen and (max-width:800px){
-  header.primary nav ul{
-  flex-direction:column;
+header.primary nav ul{
+flex-direction:column;
 }
 header.primary nav a{
-  display:block;
+display:block;
 }
 header.primary nav li{
-  margin-bottom:10px;
+margin-bottom:10px;
 }
 }
