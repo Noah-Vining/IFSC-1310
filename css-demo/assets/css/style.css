@@ -10,13 +10,15 @@ html {
 
 /* ----- Global Styles ------ */
 body{
-  background-color: #C8B6C6;
+  background-color: #201E1F;
   font-family: 'Raleway', sans-serif;
   margin:0;
+  line-height:1.5rem;
+  color:#ffffff;
 }
 
 header.primary{
-  background-color: #BAA4EB;
+  background-color: #BAA4EE;
   text-align:center;
   text-shadow:1px 1px #000000; /* First two values are x and y coords, third value (that isnt actually there right now) is blur and doesn't matter or is needed, and last in hex */
   color:#ffffff
@@ -173,8 +175,90 @@ font-size:.9rem;
 text-transform:uppercase;
 }
 
+header.primary{
+ 
+}
+
+#demo h2{
+  border-left: 7.5px solid #444cf7;
+  padding:10px;
+}
+
+#demo a{
+  color:#444cf7;
+}
+
+table{
+  border:2px solid #000000;
+  border-collapse:collapse;
+  width:100%;
+}
+
+tr:nth-child(even){
+  background-color:rgba(85, 85, 85, 0.9);
+}
+
+th{
+  background-color:#000000;
+  color:#ffffff;
+  padding:10px;
+}
+
+td{
+  border:2px solid #000000;
+  padding:5px;
+  width:33%;
+  text-align:right;
+}
+
+td:first-of-type{
+  text-align:left;
+}
+
+
+#demo ol{
+  list-style-type:;
+}
+
+#demo ul{
+  list-style-type:square;
+}
+
+#demo ul ul{
+  list-style-type:circle;
+}
+
+#demo dl{
+
+}
+
+#demo dt{
+  font-weight:bold;
+}
+
+#demo dd{
+  margin:0px; /* --- Override the pages default margin ---*/
+}
+
+dd + dt{ /*--- Adjacent Sibling Combinator --- */
+  margin-top:20px;
+}
+
 /* ----- Box Sizing ------ */
 
+#demo blockquote{
+  background-color:#FF4000;
+  padding:40px;
+  border:5px double black;
+  border-radius:6px;
+}
+
+#demo cite{
+  display:block;
+  text-align:right;
+  font-weight:bold;
+  font-size: .7rem;
+}
 html{
 box-sizing: border-box;
 }
@@ -185,13 +269,34 @@ box-sizing: border-box;
 max-width:960px; 
 width:800px;
 margin:40px auto;
+}
 
+.img-right{
+  float:right;
+  margin:10px 0px 10px 20px;
+  border: 10px solid #fbbaf7;
+  border-radius:4px;
+}
+
+.img-left{
+  float:left;
+  margin:10px 20px 10px 0;
+  padding:5px;
+  border-radius:4px;
+}
+
+.img-center{
+  display:block;
+  margin:20px auto;
+  padding:5px;
+  border-radius:4px;
 }
 
 /*----- Responsive Images -----*/
 img{
 max-width:100%;
 }
+
 
 /* ------- Media Queries -------- */
 
