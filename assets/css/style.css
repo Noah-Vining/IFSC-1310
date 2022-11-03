@@ -47,13 +47,14 @@ html {
   section#assignments ul {
    display:flex;
    flex-direction:row;
-   justify-content:space-evenly;
+   justify-content:left;
    padding:0;
    flex-wrap:wrap;
   }
   
   section#assignments ul li {
     list-style-type:none;
+    margin-right:10px;
   }
   
   section#assignments ul li a.default{
