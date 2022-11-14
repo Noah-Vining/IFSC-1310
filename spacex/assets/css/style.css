@@ -1,0 +1,81 @@
+/* --- Color Scheme ---- */
+#1A74E2
+#3FA0EF
+#6BD0FF
+#1F2123
+#101010
+
+/* --- Box Sizing --- */
+html {
+    box-sizing: border-box;
+}
+
+/*---- Utility Styles --- */
+/*--- Responsive Images ---*/
+
+/*--- Main CSS ---*/
+body {
+    background-color: #1f2123;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    line-height: 1.4rem;
+
+}
+
+header#main:before{
+    position:absolute;
+    content:"";
+    background-image: url(../img/dragoncrew8k.jpg);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    
+}
+
+header#main{
+    position:relative;
+    text-align:center;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+
+nav{
+position:relative;
+
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    position:relative;
+    
+}
+
+nav ul li a{
+    text-decoration:none;
+    background-color:rgba(26, 116, 226, .5);
+    padding:8px 16px;
+    border-radius:20px; 
+    transition:0.5s;
+    color:#ffffff;
+}
+
+nav ul li a:hover{
+background-color: rgba(26, 116, 226, 0.9)
+}
+
+h1#logo{
+    width: 750px;
+    height: 422px;
+    background: url();
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position:relative;
+
+}
