@@ -1,9 +1,11 @@
-/* --- Color Scheme ---- */
+/* --- Colors ---- */
 #1A74E2
 #3FA0EF
 #6BD0FF
 #1F2123
 #101010
+#E5E7E9 
+#c6cbd0
 
 /* --- Box Sizing --- */
 html {
@@ -15,12 +17,11 @@ html {
 
 /*--- Main CSS ---*/
 body {
-    background-color: #1f2123;
     color: #ffffff;
-    margin: 0;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     line-height: 1.4rem;
-
+    background-color: #101010;
+    margin:0;
 }
 
 header#main:before{
@@ -32,50 +33,224 @@ header#main:before{
     bottom: 0px;
     left: 0px;
     opacity: 0.3;
+    width:100%;
     
 }
 
 header#main{
     position:relative;
-    text-align:center;
+    text-align: center;
     padding-top: 40px;
-    padding-bottom: 40px; 
+    padding-bottom: 70px;
 }
 
-nav{
+header#main nav{
 position:relative;
 
 }
 
-nav ul{
+header#main nav ul{
     list-style-type: none;
     display: flex;
     flex-direction:row;
     justify-content:space-evenly;
     position:relative;
+    max-width:900px;
+    margin: 0px 25%;
+   margin-top:20px;
     
 }
 
-nav ul li a{
+header#main nav ul li a{
     text-decoration:none;
     background-color:rgba(26, 116, 226, .5);
     padding:8px 16px;
     border-radius:20px; 
     transition:0.5s;
     color:#ffffff;
-}
+    padding: 10px 40px;
+ }   
 
-nav ul li a:hover{
+header#main nav ul li a:hover{
 background-color: rgba(26, 116, 226, 0.9)
 }
 
-h1#logo{
-    width: 750px;
-    height: 422px;
-    background: url();
+h1#dragon{
+    width: 600px;
+    height: 338px;
+    background: url(../img/dragonlogotransparent.png);
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     position:relative;
+    margin:0 auto;
+}
+
+h2#spacex{
+    width: 400px;
+    height: 49px;
+    background: url(../img/spacexlogo_fixed2.png);
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position:absolute;
+    margin:0 auto;
+    left:10px;
+    top:10px;
+}
+
+section.intro{
+    color: #000000;
+    Text-align: center;
+    padding-top:20px;
+    padding-bottom:50px;
+    background-color: #c6cbd0 ;
+}
+
+h2{
+    font-size:2rem;
+    color: #1A74E2;
+    text-align: center;
+}
+
+section.intro p{
+    width:50%;
+    margin:20px auto;
+    font-size: 1.2rem;
+}
+
+
+section#configurations{
+    color:#000000;
+    padding-top: 10px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:50px;
+    background-color: #101010;
 
 }
+  
+article.config{
+    display:flex;
+    flex-direction: row;
+    color:#000000;
+    Margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    padding-left: 220px;
+    position: relative;
+    border: 6px solid #1A74E2;
+    border-radius: 20px;
+    background-color: #c6cbd0;
+
+}
+
+img.imgconfig{
+    width:200px;
+    position: absolute;
+    top:30px;
+    left:0;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+section#configurations h3{
+   text-indent:20px;
+   font-size:1.5rem;
+}
+
+section#configurations p#sub{
+    text-indent:20px;
+    font-size:1.3rem;
+    margin-bottom: -2px;
+    margin-top:-10px;
+
+}
+section#images{
+    background-color:#c6cbd0;
+    padding: 20px 50px;
+    margin: 0 auto;
+  
+}
+
+section#images img{
+  display: block;
+  width: 40%;
+}
+
+
+div#diagram{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid #1A74E2;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+
+section#images p{
+    width:40%;
+    color:#000000;
+    font-size:2rem;
+    line-height: 3rem;
+}
+
+footer{
+    font-size:1.1rem;
+    text-align: center;
+    background-color: #000000;
+    width: 100%;
+    height:100%;
+    display:inline-block;
+}
+
+section#contact{
+    background-color: #c6cbd0;
+    padding:30px;
+    border: 5px solid #1A74E2;
+    border-radius: 20px;
+    margin:20px 0;
+}
+
+section#history{
+    background-color: #c6cbd0;
+    color:#000000;
+}
+
+section#history{
+    color: #000000;
+    Text-align: center;
+    padding-top:20px;
+    padding-bottom:50px;
+    background-color: #c6cbd0 ;
+}
+
+section#history p{
+    width:70%;
+    margin:20px auto;
+    font-size: 1.2rem;
+}
+
+section#table{
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+table{
+    margin: 0 auto;
+}
+
+th{
+    background-color:#1A74E2;
+    color:#ffffff;
+    padding:10px;
+  }
+  
+  td{
+    border:2px solid #c6cbd0;
+    text-align:right;
+    padding:10px;
+    
+  }
+  
