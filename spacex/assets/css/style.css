@@ -254,3 +254,17 @@ th{
     
   }
   
+  section#faqs{
+    background-color: #101010;
+    padding:30px;
+  }
+
+  section#faqs div{
+    border: 5px solid #1A74E2;
+    border-radius: 20px;
+    background-color: #c6cbd0;
+    color:#000000;
+    margin:30px 20px;
+    padding:10px 20px;
+    font-size: 1.3rem;
+  }
