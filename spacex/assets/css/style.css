@@ -268,3 +268,24 @@ th{
     padding:10px 20px;
     font-size: 1.3rem;
   }
+
+section#back{
+    text-align:center;
+    padding-bottom: 30px;
+}
+
+section#back a{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color:rgba(26, 116, 226, .5);
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    transition:0.5s;
+}
+
+section#back a:hover{
+    background-color:rgba(26, 116, 226, .9);
+}
