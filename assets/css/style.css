@@ -42,6 +42,8 @@ html {
   }
   section#assignments{
     margin-top:30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #544D54;
   }
   
   section#assignments ul {
@@ -78,7 +80,7 @@ html {
     color:#ffffff;
     text-decoration:none;
     background-color:rgba(0, 45, 200, .5);
-    margin-bottom:20px;
+    margin-bottom:35px;
     text-align: center;
     margin-top:-7px;
   }
@@ -100,4 +102,25 @@ html {
   
   section#assignments ul li#position ul li a:hover{
       background-color:rgba(75,0,130, 1);
+  }
+
+  section#progress {
+    background-color: #c6cbd0;
+    border: 5px solid rgba(0, 45, 200);
+    border-radius: 25px;
+    margin-top: 50px;
+    padding: 0 10px;
+    padding-bottom: 20px;
+  }
+
+  section#progress h2{
+    font-size: 1.8rem;
+  }
+
+  section#progress p{
+    font-size: 1.2rem;
+  }
+
+  section#progress a{
+    font-size: 1.2rem;
   }
