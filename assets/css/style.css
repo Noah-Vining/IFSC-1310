@@ -124,3 +124,20 @@ html {
   section#progress a{
     font-size: 1.2rem;
   }
+
+  section#reflection {
+    background-color: #c6cbd0;
+    border: 5px solid rgba(0, 45, 200);
+    border-radius: 25px;
+    margin-top: 50px;
+    padding: 0 10px;
+    padding-bottom: 20px;
+  }
+
+  section#reflection h2{
+    font-size: 1.8rem;
+  }
+
+  section#reflection p{
+    font-size: 1.2rem;
+  }
